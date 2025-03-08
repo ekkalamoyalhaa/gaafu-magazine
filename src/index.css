@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Sans+Dhivehi:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -79,8 +79,8 @@
   }
   
   body {
-    @apply bg-gaafu-background text-gaafu-foreground font-sans;
-    font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+    @apply bg-gaafu-background text-gaafu-foreground font-dhivehi;
+    font-feature-settings: "kern", "liga", "calt";
   }
 
   /* Glass effect */
@@ -124,6 +124,11 @@
   
   /* Category label styles */
   .category-label {
-    @apply inline-block px-2 py-1 text-xs font-medium rounded;
+    @apply inline-block px-3 py-1.5 text-xs font-medium rounded-full;
+  }
+
+  /* Card styling */
+  .card-shadow {
+    @apply shadow-md hover:shadow-lg transition-shadow duration-300;
   }
 }

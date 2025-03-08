@@ -23,8 +23,8 @@ const Article = () => {
         <Header />
         <div className="container mx-auto px-4 pt-32 pb-16">
           <div className="max-w-3xl mx-auto">
-            <div className="w-full h-64 bg-gaafu-muted animate-pulse rounded-lg mb-6"></div>
-            <div className="w-3/4 h-10 bg-gaafu-muted animate-pulse rounded mb-4"></div>
+            <div className="w-full h-64 bg-gaafu-muted animate-pulse rounded-xl mb-6"></div>
+            <div className="w-3/4 h-10 bg-gaafu-muted animate-pulse rounded-lg mb-4"></div>
             <div className="w-full h-4 bg-gaafu-muted animate-pulse rounded mb-3"></div>
             <div className="w-full h-4 bg-gaafu-muted animate-pulse rounded mb-3"></div>
             <div className="w-2/3 h-4 bg-gaafu-muted animate-pulse rounded mb-6"></div>
@@ -40,9 +40,9 @@ const Article = () => {
       <div className="min-h-screen">
         <Header />
         <div className="container mx-auto px-4 pt-32 pb-16 text-center">
-          <h1 className="text-2xl font-bold mb-4">އާޓިކަލް ނުފެނުނު</h1>
+          <h1 className="text-2xl font-bold mb-4 font-dhivehi">އާޓިކަލް ނުފެނުނު</h1>
           <p className="mb-6">އާޓިކަލް ލިބެން ނެތް ނުވަތަ ކުށެއް ދިމާވެއްޖެ</p>
-          <Link to="/" className="text-gaafu-accent hover:text-gaafu-highlight">
+          <Link to="/" className="text-gaafu-accent hover:text-gaafu-highlight py-2 px-6 rounded-full bg-gaafu-accent-light/50 hover:bg-gaafu-accent-light inline-block transition-colors">
             މައި ސަފްޙާއަށް ދާންވީތަ؟
           </Link>
         </div>
@@ -56,20 +56,20 @@ const Article = () => {
       <Header />
       
       <main className="pt-24 pb-16">
-        <article className="container mx-auto px-4">
+        <article className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             {/* Category Label */}
-            <div className="mb-4">
+            <div className="mb-5">
               <Link 
                 to={`/category/${article.category}`}
-                className={`inline-block ${categoryColors[article.category]} py-1 px-3 rounded text-sm font-medium`}
+                className={`inline-block ${categoryColors[article.category]} py-1.5 px-4 rounded-full text-sm font-medium shadow-sm`}
               >
                 {categoryLabels[article.category]}
               </Link>
             </div>
             
             {/* Title */}
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight font-dhivehi">
               {article.title}
             </h1>
             
@@ -86,7 +86,7 @@ const Article = () => {
             </div>
             
             {/* Featured Image */}
-            <div className="mb-8 rounded-lg overflow-hidden">
+            <div className="mb-8 rounded-xl overflow-hidden shadow-md">
               <img 
                 src={article.coverImage} 
                 alt={article.title}
@@ -95,7 +95,7 @@ const Article = () => {
             </div>
             
             {/* Content */}
-            <div className="prose prose-lg max-w-none article-content">
+            <div className="prose prose-lg max-w-none article-content font-dhivehi">
               {/* Excerpt as intro paragraph */}
               <p className="font-medium text-xl">{article.excerpt}</p>
               
@@ -106,10 +106,10 @@ const Article = () => {
             {/* Share */}
             <div className="mt-12 pt-6 border-t border-gaafu-border">
               <div className="flex items-center justify-between">
-                <h3 className="font-medium">މިމާވާދު ޝެއަރ ކުރާ:</h3>
+                <h3 className="font-medium font-dhivehi">މިމާވާދު ޝެއަރ ކުރާ:</h3>
                 <div className="flex space-x-2 space-x-reverse">
                   <button 
-                    className="p-2 rounded-full bg-gaafu-muted hover:bg-gaafu-accent hover:text-white transition-colors"
+                    className="p-3 rounded-full bg-gaafu-muted hover:bg-gaafu-accent hover:text-white transition-colors shadow-sm"
                     aria-label="Share"
                   >
                     <Share2 className="h-5 w-5" />

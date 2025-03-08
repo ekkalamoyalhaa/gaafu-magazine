@@ -21,14 +21,14 @@ const ArticleCard = ({ article, featured = false }: ArticleCardProps) => {
 
   return (
     <div 
-      className={`group overflow-hidden rounded-lg transition-all duration-500 ${
+      className={`group overflow-hidden rounded-xl card-shadow transition-all duration-500 ${
         featured ? 'md:flex animate-fade-in' : 'h-full animate-slide-in'
       }`}
     >
       {/* Image Container */}
       <div 
         className={`relative overflow-hidden ${
-          featured ? 'md:w-1/2 aspect-video md:aspect-auto' : 'aspect-video'
+          featured ? 'md:w-1/2 aspect-video md:aspect-auto rounded-t-xl md:rounded-r-none md:rounded-l-xl' : 'aspect-video rounded-t-xl'
         }`}
       >
         <Link to={`/article/${id}`}>
@@ -49,8 +49,8 @@ const ArticleCard = ({ article, featured = false }: ArticleCardProps) => {
       
       {/* Content */}
       <div 
-        className={`p-4 md:p-6 bg-white ${
-          featured ? 'md:w-1/2 flex flex-col justify-center' : ''
+        className={`p-5 md:p-6 bg-white ${
+          featured ? 'md:w-1/2 flex flex-col justify-center md:rounded-l-none md:rounded-r-xl' : 'rounded-b-xl'
         }`}
       >
         <Link to={`/article/${id}`}>

@@ -22,14 +22,14 @@ const NotFound = () => {
       
       <main className="flex-grow flex items-center justify-center pt-24 pb-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-6xl lg:text-8xl font-bold text-gaafu-accent mb-4">404</h1>
-          <h2 className="text-2xl md:text-3xl font-medium mb-6">ސަފްހާ ނުފެނުނު</h2>
-          <p className="text-lg md:text-xl text-gaafu-foreground/70 mb-8 max-w-2xl mx-auto">
+          <h1 className="text-6xl lg:text-8xl font-bold text-gaafu-accent mb-5 font-dhivehi">404</h1>
+          <h2 className="text-2xl md:text-3xl font-medium mb-6 font-dhivehi">ސަފްހާ ނުފެނުނު</h2>
+          <p className="text-lg md:text-xl text-gaafu-foreground/70 mb-8 max-w-2xl mx-auto font-dhivehi">
             މަޢާފުކުރައްވާ، ތިޔަ ބަލަން އުޅުއްވާ ސަފްހާ ނުފެނުނު. ގޯސް ލިންކެއް ނުވަތަ މިހާރު ނުވަތަ ބަދަލުވެފައިވާ އެޑްރެހަކަށް ވެދާނެ.
           </p>
           <Link 
             to="/" 
-            className="inline-block py-3 px-8 bg-gaafu-accent text-white rounded-md font-medium hover:bg-gaafu-accent/90 transition-colors"
+            className="inline-block py-3 px-8 bg-gaafu-accent text-white rounded-full font-medium hover:bg-gaafu-accent/90 transition-colors shadow-md hover:shadow-lg"
           >
             މައި ސަފްޙާއަށް ދާންވީތަ؟
           </Link>

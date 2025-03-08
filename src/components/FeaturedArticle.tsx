@@ -10,7 +10,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
   const { id, title, excerpt, coverImage, category } = article;
 
   return (
-    <div className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
+    <div className="relative h-[65vh] min-h-[450px] max-h-[600px] overflow-hidden rounded-2xl">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -19,7 +19,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
           className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
       </div>
       
       {/* Content */}
@@ -27,14 +27,14 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <div 
-              className={`inline-block mb-4 ${categoryColors[category]} 
-                py-1.5 px-3 rounded-md text-sm font-medium`}
+              className={`inline-block mb-5 ${categoryColors[category]} 
+                py-1.5 px-4 rounded-full text-sm font-medium shadow-sm`}
             >
               {categoryLabels[category]}
             </div>
             
             <Link to={`/article/${id}`}>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 hover:text-gaafu-highlight transition-colors">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 hover:text-gaafu-highlight transition-colors font-dhivehi">
                 {title}
               </h1>
             </Link>
@@ -45,7 +45,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
             
             <Link 
               to={`/article/${id}`}
-              className="inline-block py-2 px-6 bg-gaafu-highlight text-white rounded-md font-medium hover:bg-gaafu-highlight/90 transition-colors"
+              className="inline-block py-3 px-7 bg-gaafu-highlight text-white rounded-full font-medium hover:bg-gaafu-highlight/90 transition-colors shadow-md hover:shadow-lg"
             >
               އިތުރަށް ކިޔާ
             </Link>
