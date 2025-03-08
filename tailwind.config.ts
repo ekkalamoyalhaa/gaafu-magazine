@@ -21,7 +21,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Noto Sans Arabic', 'Noto Sans', 'sans-serif'],
-				dhivehi: ['Noto Sans Dhivehi', 'Noto Sans Arabic', 'sans-serif'],
+				dhivehi: ['MV-Waheed', 'Faseyha', 'sans-serif'],
+				faseyha: ['Faseyha', 'MV-Waheed', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
