@@ -10,7 +10,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
   const { id, title, excerpt, coverImage, category } = article;
 
   return (
-    <div className="relative h-[65vh] min-h-[450px] max-h-[600px] overflow-hidden rounded-2xl">
+    <div className="relative h-[65vh] min-h-[450px] max-h-[600px] overflow-hidden rounded-2xl shadow-lg">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -18,7 +18,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
           alt={title}
           className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
         />
-        {/* Gradient Overlay */}
+        {/* Gradient Overlay - Updated to include more green tones */}
         <div className="absolute inset-0 bg-gradient-to-t from-gaafu-teal/90 via-gaafu-teal/60 to-transparent"></div>
       </div>
       
@@ -45,7 +45,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
             
             <Link 
               to={`/article/${id}`}
-              className="inline-block py-3 px-7 bg-gaafu-lime text-gaafu-teal rounded-full font-medium hover:bg-gaafu-lime/90 transition-colors shadow-md hover:shadow-lg"
+              className="inline-block py-3 px-7 bg-gaafu-lime text-gaafu-teal rounded-full font-medium hover:bg-white transition-colors shadow-md hover:shadow-lg"
             >
               އިތުރަށް ކިޔާ
             </Link>
