@@ -71,11 +71,21 @@ export default {
 				gaafu: {
 					background: '#FFFCF7',
 					foreground: '#1A1A1A',
-					accent: '#00529B',
+					accent: '#004851',      // Dark teal from image
 					'accent-light': '#EBF4FA',
 					muted: '#F5F5F5',
 					border: '#E2E2E2',
-					highlight: '#BF9C60'
+					highlight: '#BBD66F',   // Lime green from image
+					teal: {
+						DEFAULT: '#004851',  // Dark teal
+						light: '#006B7A'     // Medium teal variant
+					},
+					lime: {
+						DEFAULT: '#BBD66F',  // Bright lime green
+						dark: '#9CB257'      // Darker lime green variant
+					},
+					black: '#000000',       // Black from image
+					gray: '#999999'         // Gray from image
 				}
 			},
 			borderRadius: {

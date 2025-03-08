@@ -19,7 +19,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
           className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gaafu-teal/90 via-gaafu-teal/60 to-transparent"></div>
       </div>
       
       {/* Content */}
@@ -34,7 +34,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
             </div>
             
             <Link to={`/article/${id}`}>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 hover:text-gaafu-highlight transition-colors font-dhivehi">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 hover:text-gaafu-lime transition-colors font-dhivehi">
                 {title}
               </h1>
             </Link>
@@ -45,7 +45,7 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
             
             <Link 
               to={`/article/${id}`}
-              className="inline-block py-3 px-7 bg-gaafu-highlight text-white rounded-full font-medium hover:bg-gaafu-highlight/90 transition-colors shadow-md hover:shadow-lg"
+              className="inline-block py-3 px-7 bg-gaafu-lime text-gaafu-teal rounded-full font-medium hover:bg-gaafu-lime/90 transition-colors shadow-md hover:shadow-lg"
             >
               އިތުރަށް ކިޔާ
             </Link>
