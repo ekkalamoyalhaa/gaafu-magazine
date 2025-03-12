@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,24 +69,24 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gaafu: {
-					background: '#F9FAF7',
-					foreground: '#1A1A1A',
-					accent: '#004851',
-					'accent-light': '#EBF4F0',
-					muted: '#F2FCE2',
-					border: '#E0E9E0',
-					highlight: '#BBD66F',
+					background: '#FFFFFF',
+					foreground: '#000000',
+					accent: '#800000',
+					'accent-light': '#FFF0F0',
+					muted: '#F5F5F5',
+					border: '#E5E5E5',
+					highlight: '#9b9a9a',
 					teal: {
-						DEFAULT: '#004851',
-						light: '#006B7A'
+						DEFAULT: '#800000',
+						light: '#A00000'
 					},
 					lime: {
-						DEFAULT: '#BBD66F',
-						light: '#D4EAC8',
-						dark: '#9CB257'
+						DEFAULT: '#9b9a9a',
+						light: '#CDCDCD',
+						dark: '#808080'
 					},
 					black: '#000000',
-					gray: '#999999'
+					gray: '#9b9a9a'
 				}
 			},
 			borderRadius: {
