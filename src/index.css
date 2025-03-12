@@ -23,32 +23,32 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White #FFFFFF */
-    --foreground: 0 0% 0%; /* Black #000000 */
+    --background: 0 0% 97%; /* Off-white #F9F7F7 */
+    --foreground: 0 0% 10%; /* Soft black #1A1A1A */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 0 0% 97%;
+    --popover-foreground: 0 0% 10%;
 
     --primary: 0 100% 25%; /* Dark red #800000 */
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 0 0% 97%;
 
     --secondary: 0 0% 60%; /* Gray #9b9a9a */
-    --secondary-foreground: 0 0% 0%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 96%; /* Light gray for muted background */
+    --muted: 0 0% 94%; /* Light gray for muted background #F0EEEE */
     --muted-foreground: 0 0% 45%;
 
     --accent: 0 100% 25%; /* Dark red #800000 */
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 97%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 97%;
 
-    --border: 0 0% 90%; /* Light border color */
-    --input: 0 0% 89%;
+    --border: 0 0% 91%; /* Soft border color #E7E5E5 */
+    --input: 0 0% 90%;
     --ring: 0 100% 25%;
 
     --radius: 0.5rem;

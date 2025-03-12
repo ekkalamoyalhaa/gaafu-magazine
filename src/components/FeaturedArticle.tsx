@@ -33,18 +33,18 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
             </div>
             
             <Link to={`/article/${id}`}>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 hover:text-gaafu-lime transition-colors font-dhivehi">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gaafu-background mb-5 hover:text-gaafu-lime transition-colors font-dhivehi">
                 {title}
               </h1>
             </Link>
             
-            <p className="text-white/90 text-lg md:text-xl mb-6 line-clamp-2">
+            <p className="text-gaafu-background/90 text-lg md:text-xl mb-6 line-clamp-2">
               {excerpt}
             </p>
             
             <Link 
               to={`/article/${id}`}
-              className="inline-block py-3 px-7 bg-gaafu-lime text-gaafu-teal rounded-full font-medium hover:bg-white transition-colors shadow-md hover:shadow-lg"
+              className="inline-block py-3 px-7 bg-gaafu-lime text-gaafu-teal rounded-full font-medium hover:bg-gaafu-background transition-colors shadow-md hover:shadow-lg"
             >
               އިތުރަށް ކިޔާ
             </Link>

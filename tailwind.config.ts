@@ -69,24 +69,28 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gaafu: {
-					background: '#FFFFFF',
-					foreground: '#000000',
-					accent: '#800000',
-					'accent-light': '#FFF0F0',
-					muted: '#F5F5F5',
-					border: '#E5E5E5',
-					highlight: '#9b9a9a',
+					background: '#F9F7F7', // Off-white instead of pure white
+					foreground: '#1A1A1A', // Slightly softer than pure black
+					accent: '#800000', // Dark red
+					'accent-light': '#F5ECEC', // Very light red tint
+					muted: '#F0EEEE', // Subtle off-white for muted areas
+					border: '#E7E5E5', // Soft border color
+					highlight: '#A8A7A7', // Slightly lighter gray for highlights
 					teal: {
 						DEFAULT: '#800000',
 						light: '#A00000'
 					},
 					lime: {
 						DEFAULT: '#9b9a9a',
-						light: '#CDCDCD',
-						dark: '#808080'
+						light: '#D5D3D3', // Lighter gray
+						dark: '#6E6D6D'  // Darker gray
 					},
-					black: '#000000',
-					gray: '#9b9a9a'
+					black: '#1A1A1A', // Softer black
+					gray: {
+						DEFAULT: '#9b9a9a',
+						light: '#CDCBCB',
+						dark: '#6E6D6D'
+					}
 				}
 			},
 			borderRadius: {

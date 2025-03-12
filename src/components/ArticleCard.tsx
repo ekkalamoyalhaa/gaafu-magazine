@@ -49,7 +49,7 @@ const ArticleCard = ({ article, featured = false }: ArticleCardProps) => {
       
       {/* Content */}
       <div 
-        className={`p-5 md:p-6 bg-white ${
+        className={`p-5 md:p-6 bg-gaafu-background ${
           featured ? 'md:w-1/2 flex flex-col justify-center md:rounded-l-none md:rounded-r-xl' : 'rounded-b-xl'
         }`}
       >
