@@ -18,8 +18,8 @@ const FeaturedArticle = ({ article }: FeaturedArticleProps) => {
           alt={title}
           className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
         />
-        {/* Gradient Overlay - Updated to use new red color scheme */}
-        <div className="absolute inset-0 bg-gradient-to-t from-gaafu-teal/90 via-gaafu-teal/60 to-transparent"></div>
+        {/* Subtle gradient overlay with lower opacity that only extends halfway */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-gaafu-teal/40 to-transparent"></div>
       </div>
       
       {/* Content */}
